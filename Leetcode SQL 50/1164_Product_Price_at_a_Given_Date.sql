@@ -6,3 +6,5 @@ select p.product_id,
         order by change_date desc
         limit 1),10
     )as price
+from Products as p
+group by p.product_id
